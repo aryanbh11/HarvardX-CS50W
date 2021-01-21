@@ -1,0 +1,31 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create New Page
+{% endblock %}
+
+{% block body %}
+    <h1>Enter Page Details: </h1>
+    <div>
+        <form action="{% url 'encyclopedia:create' %}" method="POST">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-3">
+                    <label for="id_title">Title:</label>
+                    {{ form.title }}
+                    <div style="background-color: yellow; padding-left: 5px;">
+                        {% for message in messages %}
+                            {{ message }}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-7">
+                    {{ form.content }}
+                </div>
+                <div class="col-1">
+                    <input type="submit", value="Create">
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
