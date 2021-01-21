@@ -1,0 +1,81 @@
+.appbar {
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    padding-left: 35px;
+}
+
+.top-pane {
+    width: 100%;
+    padding: 0.8%;
+    background-color: whitesmoke;
+}
+
+.form {
+    padding: 1.5%;
+}
+
+.textfield {
+    padding: 5px;
+    width: 35%;
+}
+
+.title {
+    float: left;
+}
+
+.button {
+    margin-left: 42.7%;
+    margin-top: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    border: 0.5px solid blue;
+    background-color: rgb( 72, 133, 237);
+    &:hover {
+        background-color: rgb(55, 119, 230);
+    }
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(211, 11, 11);
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+img {
+    width: 5%;
+}
+
+a {
+    position: absolute;
+    color: black;
+    text-decoration-line: none;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 10px;
+    right: 25px;
+    &:hover {
+        text-decoration-line: underline;
+    }
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    width: 12%;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+}​{}
