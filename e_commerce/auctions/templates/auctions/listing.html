@@ -1,0 +1,84 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    {% if user.is_authenticated %}
+        {% if close_button %}
+            <div class="d-grid gap-2" style="margin-bottom: 10px;">
+                <a href="{% url 'close_listing' id=listing.id username=user.username %}" class="btn btn-outline-danger" type="button">{{ close_button }}</a>
+            </div> 
+        {% endif %}
+        <div class="d-grid gap-2" style="margin-bottom: 10px;">
+            <a href="{% url 'edit_watchlist' id=listing.id username=user.username %}" class="btn btn-outline-dark" type="button">{{ button_title }}</a>
+        </div>
+    {% else %}
+        <a href="{% url 'login' %}">Log In to Add to Wachlist</a> 
+    {% endif %}
+    {% if message %}
+        <div class="toast show" role="alert" aria-live="polite" aria-atomic="true" data-bs-delay="1000">
+            <div role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-body">
+                    {{ message }}            
+                </div>
+            </div>                
+        </div>
+    {% endif %}
+    <div class="card-group" style="margin-bottom: 10px;">
+        <div class="col-6">
+            {% if listing.image_url %}
+                <img src="{{ listing.image_url }}" class="card-img-top" alt="{{ listing.title }} Image">
+            {% else %}
+                <img src="http://wonkville.net/wp-content/uploads/2016/04/No-image-available.jpg" class="card-img-top" alt="{{ listing.title }} Image" style="width: 200px; height: 200px;">
+            {% endif %}
+        </div>
+        <div class="col-6">
+          <h5 class="card-title">{{ listing.title }} <span class="badge bg-danger text-light">Current Bid: {{ listing.current_price }} $</span></h5>
+          <p class="card-text"><small class="text-muted">Date Posted: {{ listing.date }}</small></p>
+          <p class="card-text">{{ listing.description }}</p>
+          <p class="card-text"><small class="text-muted">Category: {{ listing.category }}</small></p>
+        </div>
+    </div>
+    {% if bid_form %}
+        {% if user.is_authenticated %}
+            <div>
+                <form action="{% url 'listings' id=listing.id username=user.username %}" method="POST">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label>Bid Amount:</label>
+                        {{ bid_form.amount }}
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Bid!">
+                </form>
+            </div>
+        {% else %}
+            <a href="{% url 'login' %}">Log In to Bid and Comment</a>
+        {% endif %}
+    {% endif %}
+    {% if user.is_authenticated %}
+        <div style="margin-top: 20px; margin-bottom: 20px;">
+            <form action="{% url 'comments' id=listing.id username=user.username %}" method="POST">
+                {% csrf_token %}
+                <div class="mb-3">
+                    {{ comment_form.content }}
+                </div>
+                <input class="btn btn-primary" type="submit" value="Comment">
+            </form>
+        </div>
+    {% endif %}
+    {% if comments %}
+        <h2>Comments.</h2>
+        {% for comment in comments %}
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{comment.user.username}}</h5>
+                    <p class="card-text">{{comment.content}}</p>
+                    <p class="card-text"><small class="text-muted">{{comment.date}}</small></p>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div>
+            <h2>No comments.</h2>
+        </div>
+    {% endif %}
+
+{% endblock %}
