@@ -1,4 +1,7 @@
-# aryanbh11: Project 1
+# Project 1: Encyclopedia (Wiki) 
 
-## Video Link
-https://youtu.be/4dgoMSCRLjg
+## Objective 
+Design a Wikipedia-like online encyclopedia.
+
+## Demonstration Video
+[YouTube](https://youtu.be/4dgoMSCRLjg)
