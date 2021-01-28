@@ -5,3 +5,6 @@ Design an eBay-like e-commerce auction site that will allow users to post auctio
 
 ## Demonstration Video
 [YouTube](https://youtu.be/jqtDNMQY0u0)
+
+## Score
+1/1
