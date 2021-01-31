@@ -3,6 +3,13 @@
 ## Introduction
 My project submissions for HarvardX-CS50W: Web Programming with Python and JavaScript. I completed 5 projects in total out of which 4 were topic specific and one was a Final Project that tested all the topics that were taught in the course. 
 
+## Tools Used/Learnt
+- HTML/CSS/JavaScript
+- Bootstrap
+- Django (Python) 
+- SQL
+- React 
+
 ## Projects 
 **Project 0:** Search -> [Code](https://github.com/aryanbh11/HarvardX-CS50W/tree/main/search) | [YouTube](https://youtu.be/gky5wUPF8UM)
 
