@@ -1,7 +1,7 @@
 # HarvardX-CS50W: Web Programming
 
 ## Introduction
-My project submissions for HarvardX-CS50W: Web Programming with Python and JavaScript. I completed 5 projects in total out of which 4 were topic specific and one was a Final Project that tested all the topics that were taught in the course. 
+My project submissions for HarvardX-CS50W: Web Programming with Python and JavaScript. I completed 6 projects in total out of which 5 were topic specific and one was a Final Project that tested all the topics that were taught in the course. 
 
 ## Tools Used/Learnt
 - HTML/CSS/JavaScript
