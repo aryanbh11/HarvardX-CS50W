@@ -5,3 +5,6 @@ Design a Wikipedia-like online encyclopedia.
 
 ## Demonstration Video
 [YouTube](https://youtu.be/4dgoMSCRLjg)
+
+## Score
+1/1

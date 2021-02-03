@@ -5,3 +5,6 @@ Design a front-end for Google Search, Google Image Search, and Google Advanced S
 
 ## Demonstration Video
 [YouTube](https://youtu.be/gky5wUPF8UM)
+
+## Score
+1/1
