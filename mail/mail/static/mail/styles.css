@@ -1,0 +1,18 @@
+textarea {
+    min-height: 400px;
+}
+
+.card {
+    border: 1px solid black;
+}
+
+.card:hover {
+    box-shadow: 1.5px 1.5px #007bff;
+    border: 2px solid #007bff;
+}
+
+.email-body {
+    border: 1px solid gray;
+    min-height: 400px;
+    padding: 10px;
+}
