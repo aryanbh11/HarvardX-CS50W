@@ -17,5 +17,7 @@ My project submissions for HarvardX-CS50W: Web Programming with Python and JavaS
 
 **Project 2:** E-Commerce (Ebay) -> [Code](https://github.com/aryanbh11/HarvardX-CS50W/tree/main/e_commerce) | [YouTube](https://youtu.be/jqtDNMQY0u0)
 
+**Project 3:** Mail -> [Code](https://github.com/aryanbh11/HarvardX-CS50W/tree/main/mail) | [YouTube](https://youtu.be/kM-to0JIHfY)
+
 ## Notice 
 Any student pursuing the course HarvardX-CS50W: Web Programming with Python and JavaScript **does not** have permission to use any code on this repository. This is in accordance with Harvard's plagiarism policy. 
