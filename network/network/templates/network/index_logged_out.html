@@ -1,0 +1,22 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <nav aria-label="Page navigation example" style="margin-left: 10px;">
+        <ul class="pagination">
+        <li class="page-item"><button class="btn btn-outline-dark" id="previous-page">Previous</button></li>
+        <li class="page-item"><button class="btn btn-outline-dark" id="next-page" style="margin-left: 5px;">Next</button></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h6><a href="{% url 'login' %}">Log In </a> to Like/Edit/Create posts and Follow/Unfollow users.</h6>
+    </div>
+
+    <div id="all-posts">
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'network/index.js' %}"></script>
+{% endblock %}

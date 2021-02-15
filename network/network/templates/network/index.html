@@ -1,0 +1,31 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <nav aria-label="Page navigation example" style="margin-left: 10px;">
+        <ul class="pagination">
+        <li class="page-item"><button class="btn btn-outline-dark" id="previous-page">Previous</button></li>
+        <li class="page-item"><button class="btn btn-outline-dark" id="next-page" style="margin-left: 5px;">Next</button></li>
+        </ul>
+    </nav>
+
+    <div id="all-posts">
+        <div class="card">
+            <form id="post-form">
+                <textarea class="form-control" id="post-body" placeholder="What's on your mind?"></textarea>
+                <input class="btn btn-primary" id="post-button" type="submit" value="Post" style="margin-top: 10px;">
+            </form>
+        </div>
+    </div>
+
+    <div id="following-posts" style="display: none;">
+    </div>
+
+    <div id="user-profile" style="display: none">
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'network/app.js' %}"></script>
+{% endblock %}
