@@ -22,7 +22,7 @@ My project submissions for HarvardX-CS50W: Web Programming with Python and JavaS
 
 **Project 3:** Mail -> [Code](https://github.com/aryanbh11/HarvardX-CS50W/tree/main/mail) | [YouTube](https://youtu.be/kM-to0JIHfY)
 
-**Project 4:** Network -> [Code]() | [YouTube]()
+**Project 4:** Network -> [Code](https://github.com/aryanbh11/HarvardX-CS50W/tree/main/network) | [YouTube](https://youtu.be/JpqgQ3tuTWo)
 
 **Final Project:** Capstone -> [Code]() | [YouTube]()
 
