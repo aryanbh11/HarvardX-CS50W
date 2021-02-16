@@ -6,5 +6,11 @@ Design a Twitter-like social network website for making posts and following user
 ## Demonstration Video
 [YouTube](https://youtu.be/JpqgQ3tuTWo)
 
-## Score
-1/1
+## User Login Details (username, password)
+aryanbhatia, aryan
+
+elonkmusk, tesla
+
+gianna, gianna
+
+luna, luna
